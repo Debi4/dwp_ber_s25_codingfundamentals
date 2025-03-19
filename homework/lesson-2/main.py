@@ -34,7 +34,7 @@ print(f"myfloat is {my_float}")
 first_name = "Deborah"
 last_name = "Tomassini"
 #- Concatenate them with a space in between to form a full name and assign this to a variable named `full_name`.
-full_name = "Deborah Tomassini"
+full_name = "Deborah + Tomassini"
 #- Print the full_name.
 print(full_name)
 
@@ -57,19 +57,21 @@ print(a / b)
 
 #**a. Creating booleans**
 #- Assign the result of 5 > 3 to a variable named `is_greater`.
-is_greater = 5 > 3
+is_greater = 5 >= 3
 #- Assign the result of 5 == 3 to a variable named `is_equal`.
 is_equal = 5 == 3
 #- Assign the result of 5 < 3 to a variable named `is_smaller`.
-is_smaller = 5 < 3
+is_smaller = 5 <= 3
 #- Print the values of `is_greater`, `is_equal`, and `is_smaller`.
-print("is_greater")
-print("is_equal")
-print("is_smaller")
+print(is_greater)
+print(is_equal)
+print(is_smaller)
 
 #**b. Boolean Operations**
 
 #Create two boolean variables: `bool1 = True` and `bool2 = False`.
+bool1 = True
+bool2 = False
 #Perform logical AND, OR, and NOT operations on these variables and print the results.
 
 #**c. Comparison between data types**
@@ -81,8 +83,11 @@ print("is_smaller")
 #pi_pi_pi = "3.14"
 #```
 #1. Are `pi` and `pi_pi` equal? If not, why?
+print(pi != pi_pi) 
+pi = "float" 
+pi_pi = "string"
 #2. Are `pi_pi` and `pi_pi_pi` equal? If not, why?
-
+print(pi_pi == pi_pi_pi + "because they are both strings")
 
 ## 4. Type checking and conversion.
 #**a. Type checking**
