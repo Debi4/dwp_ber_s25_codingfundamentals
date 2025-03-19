@@ -5,12 +5,13 @@
 
 ## 1. Variables and Basic Data Types
 a. Assign the number 10 to a variable named `my_number`.
-
+my_number = 10
 b. Assign the string "Hello, Python!" to a variable named `my_string`.
-
+my_string = "Hello, Python!"
 c. Assign the float 3.14 to a variable named `my_float`.
-
+my_float = 3.14
 Print each variable: `my_number`, `my_string`, and `my_float`.
+print (my_number; my_string; my_float)
 
 ## 2. Working with Different Data Types
 **a. String concatenation**
