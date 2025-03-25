@@ -23,7 +23,9 @@ my_string = "Hello, Python!"
 #c. Assign the float 3.14 to a variable named `my_float`.
 my_float = 3.14
 #Print each variable: `my_number`, `my_string`, and `my_float`.
+print("Number:", my_number)
 print(my_number)
+print("String:", my_string)
 print(my_string)
 print(my_float)
 print(f"myfloat is {my_float}")
@@ -37,6 +39,10 @@ last_name = "Tomassini"
 full_name = "Deborah + Tomassini"
 #- Print the full_name.
 print(full_name)
+first_name = "Kate"
+last_name = "Johnson"
+full_name = first_name + " " + last_name
+print("Full name:", full_name)
 
 #**b. Arithmetic Operations**
 #- Create two integer variables: `a = 5` and `b = 3`.
@@ -52,6 +58,14 @@ print(a + b)
 print(a - b)
 print(a * b)
 print(a / b)
+add_result = a + b
+sub_result = a - b
+mult_result = a * b
+div_result = a / b
+print("Addition:", add_result)
+print("Subtraction:", sub_result)
+print("Multiplication:", mult_result)
+print("Division:", div_result)
 
 ## 3. Booleans and Comparisons
 
@@ -66,6 +80,12 @@ is_smaller = 5 <= 3
 print(is_greater)
 print(is_equal)
 print(is_smaller)
+is_greater = 5 > 3
+is_equal = 5 == 3
+is_smaller = 5 < 3
+print("Is greater:", is_greater)
+print("Is equal:", is_equal)
+print("Is smaller:", is_smaller)
 
 #**b. Boolean Operations**
 
@@ -73,38 +93,62 @@ print(is_smaller)
 bool1 = True
 bool2 = False
 #Perform logical AND, OR, and NOT operations on these variables and print the results.
+and_result = bool1 and bool2
+or_result = bool1 or bool2
+print("And result:", and_result)
+print("Or result:", or_result)
 
 #**c. Comparison between data types**
 
 #Given three variables:
 #```
-#pi = 3.14
-#pi_pi = '3.14'
-#pi_pi_pi = "3.14"
-#```
+pi = 3.14
+pi_pi = '3.14'
+pi_pi_pi = "3.14"
+
 #1. Are `pi` and `pi_pi` equal? If not, why?
-print(pi != pi_pi) 
-pi = "float" 
-pi_pi = "string"
+print("Are pi and pi_pi equal?", pi == pi_pi, "because pi is a number and pi_pi is a string")
 #2. Are `pi_pi` and `pi_pi_pi` equal? If not, why?
 print(pi_pi == pi_pi_pi + "because they are both strings")
+
+print("Are pi_pi and pi_pi_pi equal?", pi_pi == pi_pi_pi, "because both pi_pi and pi_pi_pi are the same strings")
 
 ## 4. Type checking and conversion.
 #**a. Type checking**
 
 #For each variable `pi`, `pi_pi`, `pi_pi_pi`, use the type() function to print its data type.
+print(type(pi))
+print(type(pi_pi))
+print(type(pi_pi_pi))
 
 #**b. Type conversion**
 
 #- Create a string variable `my_str = "123"`.
+my_string = "123"
 #- Convert it to an integer and store it in a variable named `my_int`.
+my_int = 123
 #- Convert `my_int` to a float and store it in a variable named `my_float_converted`.
+my_float_converted = 123.00
 #- Print all three variables.
+print("my_string:", my_string)
+print("my_int:", my_int)
+print("my_float_converted:", my_float_converted)
+my_str = "123"
+my_int = int(my_str)
+my_float_converted = float(my_int)
+print("my_str:", my_str)
+print("my_int:", my_int)
+print("my_float_converted:", my_float_converted)
 
 ## 5. Challenge
 
 #- Define a variable `celsius` and assign it a temperature value in Celsius.
+celsius = 36.8
 #- Use the formula (celsius * 9/5) + 32 to convert the temperature to Fahrenheit.
 #- Store the result in a variable named `fahrenheit`.
+fahrenheit = (celsius * 9/5) + 32
 #- Print the original temperature in Celsius and the converted temperature in Fahrenheit.
-
+print(celsius)
+print(fahrenheit)
+print("Original temperature in Celsius:", celsius)
+print("Converted temperature in Fahrenheit:", fahrenheit)
